@@ -1,15 +1,19 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import './NavBar.css';
+
 
 const NavBar = (props) => {
   return (
-    <NavBar bg='dark' variant='dark'>
-      <Container>
-        <Navbar.Brand href='#'>
-          Social <small className='text-muted'>Feed</small>
-        </Navbar.Brand>
-      </Container>
-    </NavBar>
+    <Container className='border-box'>
+      <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+        <a className='nav-text' href='#home'>
+          <h1>
+            Social <small className='text-muted'>FEED</small>
+          </h1>
+        </a>
+      </nav>
+    </Container>
   );
 }
 

@@ -1,0 +1,15 @@
+.border-box {
+  border: 2px;
+  border-style: solid;
+  border-color: red;
+  margin: 1em;
+  padding: 1em;
+}
+
+.nav-text {
+  margin: auto;
+  font-size: medium;
+  font-size: 16px;
+  color: crimson;
+  text-decoration: none;
+}
