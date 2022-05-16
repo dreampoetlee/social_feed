@@ -1,28 +1,34 @@
 import React, { useState } from 'react';
 import NavBar from './Components/NavBar/NavBar';
+import CreatePost from './Components/CreatePost/CreatePost';
+import { Container } from 'react-bootstrap';
 
 
 function App() {
   const [posts, setPosts] = useState([
     {
-      userOne: 'Garrus Vakarian',
+      userName: 'Garrus Vakarian',
       content: `It's so much easier to see the world in black and white. Gray? I don't know what to do with gray...`,
       date: '13 May 2022'
     }, 
     {
-      userTwo: 'Thane Krios',
+      userName: 'Thane Krios',
       content: `Guide this one, Kalahira, and he will be a companion to you as he was to me.`,
       date: '1 Jan 1999'
     }
-  ])
+  ]);
 
   // Need to add a new post function here
+  function addNewPost(post) {
+    let tempPosts = [...posts, post];
+
+    setPosts(tempPosts);
+  }
 
   return (
-    // lists the various components here
-    <div>
-      <NavBar/>
-    </div>
+    <Container className='create' fluid>
+      <
+    </Container>
   );
 }
 
