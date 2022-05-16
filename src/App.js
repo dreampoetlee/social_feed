@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import CreatePost from './Components/CreatePost/CreatePost';
-import { Container } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import './App.css';
 
 
 function App() {
@@ -27,7 +28,17 @@ function App() {
 
   return (
     <Container className='create' fluid>
-      <
+      <Row>
+        <NavBar/>
+      </Row>
+
+      <Row>
+        <CreatePost addNewPostProperty={addNewPost}/>
+      </Row>
+
+      <Row>
+        
+      </Row>
     </Container>
   );
 }

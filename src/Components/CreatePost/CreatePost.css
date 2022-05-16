@@ -1,11 +1,11 @@
-.create {
+.post {
   border: 2px;
   border-style: solid;
   border-radius: 20px;
   max-width: 80%;
   line-height: 1.5em;
   padding: 1em;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .btn {
@@ -13,6 +13,7 @@
   border-radius: 15%;
   display: block;
   width: 25%;
+  justify-content: center;
 }
 
 #text {

@@ -24,7 +24,7 @@ const CreatePost = (props) => {
   let fullDate = `${day}/${month}/${year}`
 
   return (
-    <Container className='create' fluid>
+    <Container className='post' fluid>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
           <FormLabel>Username:</FormLabel>
