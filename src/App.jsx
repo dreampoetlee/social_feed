@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import NavBar from './Components/NavBar/NavBar';
-import CreatePost from './Components/CreatePost/CreatePost';
-import { Container, Row } from 'react-bootstrap';
 import './App.css';
+import NavBar from './Components/NavBar/NavBar';
+import CreatePosts from './Components/CreatePosts/CreatePosts';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import { Container, Row } from 'react-bootstrap';
 
 
 function App() {
@@ -33,11 +34,11 @@ function App() {
       </Row>
 
       <Row>
-        <CreatePost addNewPostProperty={addNewPost}/>
+        <CreatePosts addNewPostProperty={addNewPost}/>
       </Row>
 
       <Row>
-        
+        <DisplayPosts parentPosts={posts}/>
       </Row>
     </Container>
   );

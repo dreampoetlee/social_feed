@@ -1,0 +1,23 @@
+button {
+  color: black;
+  padding: 5px 8px;
+  border: 1px;
+}
+
+.like {
+  background-color: purple;
+  box-shadow: 3px 3px inset;
+  border-radius: 5px;
+}
+
+.dislike {
+  background-color: crimson;
+  box-shadow: 3px 3px inset;
+  border-radius: 5px;
+}
+
+.inactive {
+  background-color: cyan;
+  box-shadow: 3px 3px;
+  border-radius: 5px;
+}

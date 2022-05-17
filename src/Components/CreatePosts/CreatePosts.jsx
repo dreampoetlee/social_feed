@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, FormControl, FormGroup, FormLabel } from 'react-bootstrap';
-import './CreatePost.css';
+import './CreatePosts.css';
 
 const CreatePost = (props) => {
   const [userName, setUserName] = useState('');
